@@ -2,6 +2,7 @@
   <div class="card">
 <img class="img-c" :src="img" alt="">
     <div class="card-info">
+      <img class="icon" :src="icon" alt="">
       <p class="name-c">{{name}}</p>
       <p class="address-c">{{address}}</p>
     <div class="button-card">
@@ -22,7 +23,8 @@ export default {
     "address",
     "img",
     "latitud",
-    "longitud"
+    "longitud",
+    "icon"
   ],
   methods: {
     ...mapMutations(["SET_MAP_COORDENADAS"]),
@@ -50,6 +52,13 @@ export default {
     border-bottom-right-radius: 5px;
   }
 
+  .icon{
+    width: 15%;
+    float: left;
+    margin-left: 10px;
+    margin-top: 20px;
+  }
+
   .img-c{
     width: 100%;
     height: 260px;
@@ -62,9 +71,10 @@ export default {
     font-family: 'Montserrat';
     font-size: 15px;
     font-weight: 600;
-    float: left;
+    float: right;
     width: 80%;
-    margin-left: 80px;
+    margin-left: 100px;
+    margin-top: -55px;
     color: #616161;
     position: relative;
   }
@@ -73,9 +83,10 @@ export default {
     font-size: 15px;
     float: left;
     width: 80%;
-    margin-top: -10px;
-    margin-left: 80px;
+    margin-top: -30px;
+    margin-left: 73px;
     position: relative;
+    color: #616161;
   }
 
   .card-info{
@@ -93,12 +104,13 @@ export default {
 
   .btn-c{
     font-family: 'Montserrat';
+    color: white;
     font-weight: 600;
     font-size: 15px;
-    background-color: white;
+    background-color: #4c8BF5;
     float: right;
     margin-right: 10px;
-    margin-top: -25px;
+    margin-top: -27px;
     height: 30px;
     width: 10%;
     border-radius: 35px;

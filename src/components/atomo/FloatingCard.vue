@@ -7,6 +7,7 @@
     :name="lugar.name"
     :address="lugar.address"
     :img="lugar.img"
+    :icon="lugar.icon"
     :longitud="lugar.lang"
     :latitud="lugar.lat"
     />
